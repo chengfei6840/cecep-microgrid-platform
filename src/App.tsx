@@ -46,10 +46,22 @@ const RoleBasedRedirect: React.FC = () => {
   return <Navigate to={getDefaultLandingRoute(currentRole)} replace />;
 };
 
+/**
+ * 部署基路径（GitHub Pages 项目站点为 "/cecep-microgrid-platform/"，本地 dev 为 "/"）。
+ *
+ * 必须传给 BrowserRouter 的 basename，否则路由会以为自己在域名根路径：
+ * 访问 "/cecep-microgrid-platform/" 时匹配不到任何路由 → 落到 "*" 兜底 →
+ * 绝对路径跳转（如 /login）会丢掉子路径前缀，地址栏变成域名根 "/login"。
+ *
+ * React Router 的 basename 不能带尾斜杠（带尾斜杠会导致子路由匹配失败），故去除。
+ * 本地 dev 时 BASE_URL 为 "/"，去除后为空串，React Router 会按 "/" 处理。
+ */
+const ROUTER_BASENAME = import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={ROUTER_BASENAME}>
         <Routes>
           {/* 登录与角色选择 */}
           <Route path="/login" element={<Login />} />
