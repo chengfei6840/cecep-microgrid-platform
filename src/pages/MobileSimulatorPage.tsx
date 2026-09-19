@@ -167,7 +167,7 @@ export const MobileSimulatorPage: React.FC = () => {
             {/* 小程序顶栏 */}
             <div className="bg-[#00152A] text-white px-4 pt-7 pb-2.5 shrink-0 flex items-center justify-between border-b border-slate-800 z-20">
               <div className="flex items-center gap-1.5">
-                <img src="/logo_no.png" alt="CECEP" className="h-4 w-auto object-contain brightness-125" />
+                <img src={`${import.meta.env.BASE_URL}logo_no.png`} alt="CECEP" className="h-4 w-auto object-contain brightness-125" />
                 <span className="text-xs font-bold">微电网巡检</span>
               </div>
 

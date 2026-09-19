@@ -236,7 +236,7 @@ export const Login: React.FC = () => {
         <div className="flex flex-col items-center text-center mb-6">
           <div className="bg-white px-5 py-2.5 rounded-xl shadow-sm mb-3.5 flex items-center justify-center border border-slate-200">
             <img
-              src="/logo_full.svg"
+              src={`${import.meta.env.BASE_URL}logo_full.svg`}
               alt="中国节能 CECEP"
               className="h-9 w-auto max-w-[220px] object-contain"
             />

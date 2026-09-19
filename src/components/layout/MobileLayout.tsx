@@ -62,7 +62,7 @@ export const MobileLayout: React.FC = () => {
         <div className="bg-[#00152A] text-white px-4 pt-3 pb-2.5 shrink-0 flex items-center justify-between border-b border-slate-800">
           <div className="flex items-center gap-2">
             <img
-              src="/logo_no.png"
+              src={`${import.meta.env.BASE_URL}logo_no.png`}
               alt="CECEP"
               className="h-5 w-auto object-contain brightness-125"
             />

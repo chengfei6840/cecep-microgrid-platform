@@ -341,7 +341,7 @@ export const AdminLayout: React.FC = () => {
           <div className="h-16 flex items-center justify-between px-3.5 border-b border-slate-800/80 bg-[#001020] shrink-0">
             <div className="bg-white px-2.5 py-1.5 rounded-lg shrink-0 flex items-center justify-center shadow-2xs border border-slate-700/50">
               <img
-                src="/logo_full.svg"
+                src={`${import.meta.env.BASE_URL}logo_full.svg`}
                 alt="中国节能 CECEP"
                 className="h-7.5 w-auto max-w-[172px] object-contain shrink-0"
               />
@@ -365,7 +365,7 @@ export const AdminLayout: React.FC = () => {
             >
               <div className="bg-white px-1.5 py-0.5 rounded-md flex items-center justify-center group-hover:scale-95 transition-transform">
                 <img
-                  src="/logo_icon.svg"
+                  src={`${import.meta.env.BASE_URL}logo_icon.svg`}
                   alt="中国节能"
                   className="h-5 w-auto max-w-[28px] object-contain"
                 />

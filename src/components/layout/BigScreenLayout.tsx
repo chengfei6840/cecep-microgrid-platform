@@ -68,7 +68,7 @@ export const BigScreenLayout: React.FC<{ children: React.ReactNode }> = ({ child
           </button>
           <div className="h-6 w-px bg-[#163E6E]" />
           <img
-            src="/logo_no.png"
+            src={`${import.meta.env.BASE_URL}logo_no.png`}
             alt="中国节能 CECEP"
             className="h-8 w-auto object-contain shrink-0 filter brightness-110"
           />

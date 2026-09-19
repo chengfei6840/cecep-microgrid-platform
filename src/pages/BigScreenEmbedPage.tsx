@@ -55,7 +55,7 @@ export const BigScreenEmbedPage: React.FC = () => {
         {/* 大屏顶栏 */}
         <div className="flex flex-col sm:flex-row items-center justify-between pb-4 border-b border-[#163860]/80 gap-3">
           <div className="flex items-center gap-3">
-            <img src="/logo_no.png" alt="CECEP" className="h-6 w-auto object-contain brightness-125" />
+            <img src={`${import.meta.env.BASE_URL}logo_no.png`} alt="CECEP" className="h-6 w-auto object-contain brightness-125" />
             <div>
               <h2 className="text-base font-bold text-cyan-100 tracking-wider">
                 低碳园区微电网运行监测中心

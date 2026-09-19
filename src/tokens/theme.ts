@@ -12,7 +12,7 @@ export const THEME_TOKENS = {
     subTitle: '基于 AI 的低碳园区微电网数字化平台',
     siteName: '低碳园区示范站',
     siteCode: 'CECEP-001',
-    logoUrl: '/logo_no.png',
+    logoUrl: `${import.meta.env.BASE_URL}logo_no.png`,
   },
   colors: {
     cecepBlue: '#004287',
