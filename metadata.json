@@ -1,0 +1,6 @@
+{
+  "name": "中节能低碳园区微电网数字化平台",
+  "description": "基于 AI 的低碳园区微电网数字化平台（一期试点：低碳园区示范站）",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

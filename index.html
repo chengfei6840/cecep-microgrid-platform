@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中节能低碳园区微电网数字化平台</title>
+    <meta name="description" content="基于 AI 的低碳园区微电网数字化平台（一期试点：低碳园区示范站）" />
+    <meta property="og:title" content="中节能低碳园区微电网数字化平台" />
+    <meta property="og:description" content="基于 AI 的低碳园区微电网数字化平台（一期试点：低碳园区示范站）" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/logo_no.png" />
+    <script>
+      (function() {
+        try {
+          localStorage.removeItem('cecep_microgrid_state_v1');
+          localStorage.removeItem('zz_dashboard_time_scope');
+          for (var i = localStorage.length - 1; i >= 0; i--) {
+            var key = localStorage.key(i);
+            if (key && (key.indexOf('zz_') !== -1 || key === 'cecep_microgrid_state_v1')) {
+              localStorage.removeItem(key);
+            }
+          }
+          var v2 = localStorage.getItem('cecep_microgrid_state_v2');
+          if (v2 && (v2.indexOf('漳') !== -1 || v2.indexOf('ZZ-') !== -1)) {
+            var cleaned = v2.replace(/漳州/g, '').replace(/漳/g, '').replace(/ZZ-CECEP-001/g, 'CECEP-001').replace(/ZZ-/g, '');
+            localStorage.setItem('cecep_microgrid_state_v2', cleaned);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 80" width="310" height="80">
+  <!-- CECEP Infinity Dots Symbol (Left) -->
+  <g id="dots">
+    <!-- Left loop: lime green to teal -->
+    <circle cx="19.5" cy="42.0" r="6.0" fill="#62B82F" />
+    <circle cx="22.0" cy="29.5" r="6.0" fill="#67BD30" />
+    <circle cx="29.0" cy="19.0" r="6.0" fill="#6EBF32" />
+    <circle cx="39.5" cy="13.5" r="6.0" fill="#58B331" />
+    <circle cx="51.5" cy="14.0" r="6.0" fill="#3BA43D" />
+    <circle cx="61.5" cy="20.5" r="6.0" fill="#1B9258" />
+    <circle cx="67.0" cy="31.0" r="6.0" fill="#0A7D78" />
+    <circle cx="67.0" cy="53.0" r="6.0" fill="#0A7D78" />
+    <circle cx="61.5" cy="63.5" r="6.0" fill="#1B9258" />
+    <circle cx="51.5" cy="70.0" r="6.0" fill="#3BA43D" />
+    <circle cx="39.5" cy="70.5" r="6.0" fill="#58B331" />
+    <circle cx="29.0" cy="65.0" r="6.0" fill="#6EBF32" />
+    <circle cx="22.0" cy="54.5" r="6.0" fill="#67BD30" />
+
+    <!-- Right loop: teal/blue to CECEP blue -->
+    <circle cx="79.0" cy="42.0" r="6.0" fill="#00609C" />
+    <circle cx="84.5" cy="31.0" r="6.0" fill="#005596" />
+    <circle cx="90.0" cy="20.5" r="6.0" fill="#004B90" />
+    <circle cx="100.0" cy="14.0" r="6.0" fill="#00448B" />
+    <circle cx="112.0" cy="13.5" r="6.0" fill="#004287" />
+    <circle cx="122.5" cy="19.0" r="6.0" fill="#004287" />
+    <circle cx="129.5" cy="29.5" r="6.0" fill="#004287" />
+    <circle cx="132.0" cy="42.0" r="6.0" fill="#004287" />
+    <circle cx="129.5" cy="54.5" r="6.0" fill="#004287" />
+    <circle cx="122.5" cy="65.0" r="6.0" fill="#004287" />
+    <circle cx="112.0" cy="70.5" r="6.0" fill="#004287" />
+    <circle cx="100.0" cy="70.0" r="6.0" fill="#00448B" />
+    <circle cx="90.0" cy="63.5" r="6.0" fill="#004B90" />
+    <circle cx="84.5" cy="53.0" r="6.0" fill="#005596" />
+  </g>
+
+  <!-- Brand Typography (Right) -->
+  <text 
+    x="148" 
+    y="46" 
+    font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" 
+    font-weight="bold" 
+    font-size="28" 
+    fill="#004287" 
+    letter-spacing="2"
+  >中国节能</text>
+  <text 
+    x="150" 
+    y="65" 
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+    font-weight="700" 
+    font-size="12" 
+    fill="#58B331" 
+    letter-spacing="3.5"
+  >CECEP</text>
+</svg>
